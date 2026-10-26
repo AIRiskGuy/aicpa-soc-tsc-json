@@ -25,8 +25,6 @@ npm run build:csv   # regenerate the CSV from the JSON
 npm run check:csv   # fail if the CSV and JSON differ
 ```
 
-`AICPA_SOC_2_TSC_2017.csv` is a separate, older file that reflects the original 2017 points of focus, before the 2022 revision; it is not generated from the JSON.
-
 ### JSON control sample and schema
 
 Since AICPA does not publish a schema for the JSON control files, we have created our own schema based on the data in the JSON files. A sample of the data is below. The JSON Schema file of the TSC controls is available as well.
