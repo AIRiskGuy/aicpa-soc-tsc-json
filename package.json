@@ -4,7 +4,10 @@
 	"version": "1.0.0",
 	"main": "",
 	"devDependencies": {},
-	"scripts": {},
+	"scripts": {
+		"build:csv": "node tools/build-controls-csv.mjs",
+		"check:csv": "node tools/build-controls-csv.mjs --check"
+	},
 	"keywords": [
 		"SOC",
 		"SOC 1",

@@ -34,7 +34,7 @@
 			},
 			{
 				"id": "CC1.2",
-				"principle": "COSO Principle 2: The board of directors demonstrates independence from management and exercises oversight of internal control development and performance.",
+				"principle": "COSO Principle 2: The board of directors demonstrates independence from management and exercises oversight of the development and performance of internal control.",
 				"pof": [
 					{
 						"id": "CC1.2.a",
@@ -369,31 +369,81 @@
 				"pof": [
 					{
 						"id": "CC3.1.a",
-						"title": "Operations Objectives",
-						"requirement": "Reflect management choices, consider risk tolerances, include performance goals, form basis for resource commitment."
+						"title": "Operations Objectives: Reflects Management's Choices",
+						"requirement": "Operations objectives reflect management's choices on structure, industry, and performance."
 					},
 					{
 						"id": "CC3.1.b",
-						"title": "External Financial Reporting Objectives",
-						"requirement": "Comply with accounting standards, consider materiality, reflect entity activities."
+						"title": "Operations Objectives: Considers Tolerances for Risk",
+						"requirement": "Sets acceptable variation for achieving operations objectives."
 					},
 					{
 						"id": "CC3.1.c",
-						"title": "External Nonfinancial Reporting Objectives",
-						"requirement": "Comply with external frameworks, consider precision requirements, reflect entity activities."
+						"title": "Operations Objectives: Includes Operations and Financial Performance Goals",
+						"requirement": "Operations objectives include desired operations and financial performance."
 					},
 					{
 						"id": "CC3.1.d",
-						"title": "Internal Reporting Objectives",
-						"requirement": "Reflect management choices, consider precision requirements, reflect entity activities."
+						"title": "Operations Objectives: Forms a Basis for Committing of Resources",
+						"requirement": "Uses operations objectives to allocate needed resources."
 					},
 					{
 						"id": "CC3.1.e",
-						"title": "Compliance Objectives",
-						"requirement": "Reflect external laws and regulations, consider risk tolerances."
+						"title": "External Financial Reporting Objectives: Complies With Applicable Accounting Standards",
+						"requirement": "Uses suitable and appropriate accounting principles."
 					},
 					{
 						"id": "CC3.1.f",
+						"title": "External Financial Reporting Objectives: Considers Materiality",
+						"requirement": "Considers materiality in financial statement presentation."
+					},
+					{
+						"id": "CC3.1.g",
+						"title": "External Financial Reporting Objectives: Reflects Entity Activities",
+						"requirement": "External financial reporting reflects underlying transactions and events."
+					},
+					{
+						"id": "CC3.1.h",
+						"title": "External Nonfinancial Reporting Objectives: Complies With Externally Established Frameworks",
+						"requirement": "Sets objectives consistent with laws, regulations, standards, and recognized frameworks."
+					},
+					{
+						"id": "CC3.1.i",
+						"title": "External Nonfinancial Reporting Objectives: Considers the Required Level of Precision",
+						"requirement": "Reflects the precision and accuracy users need in nonfinancial reporting."
+					},
+					{
+						"id": "CC3.1.j",
+						"title": "External Nonfinancial Reporting Objectives: Reflects Entity Activities",
+						"requirement": "External reporting reflects underlying transactions and events within acceptable limits."
+					},
+					{
+						"id": "CC3.1.k",
+						"title": "Internal Reporting Objectives: Reflects Management's Choices",
+						"requirement": "Internal reporting gives management accurate, complete information for its decisions."
+					},
+					{
+						"id": "CC3.1.l",
+						"title": "Internal Reporting Objectives: Considers the Required Level of Precision",
+						"requirement": "Reflects needed precision in nonfinancial objectives and materiality in financial ones."
+					},
+					{
+						"id": "CC3.1.m",
+						"title": "Internal Reporting Objectives: Reflects Entity Activities",
+						"requirement": "Internal reporting reflects underlying transactions and events within acceptable limits."
+					},
+					{
+						"id": "CC3.1.n",
+						"title": "Compliance Objectives: Reflects External Laws and Regulations",
+						"requirement": "Builds legal and regulatory minimum standards into compliance objectives."
+					},
+					{
+						"id": "CC3.1.o",
+						"title": "Compliance Objectives: Considers Tolerances for Risk",
+						"requirement": "Sets acceptable variation for achieving objectives."
+					},
+					{
+						"id": "CC3.1.p",
 						"title": "Establishes Sub-Objectives for Risk Assessment",
 						"requirement": "Identifies sub-objectives for security, availability, processing integrity, confidentiality, or privacy."
 					}
@@ -1213,6 +1263,26 @@
 						"id": "CC8.1.n",
 						"title": "Manages Patch Changes",
 						"requirement": "Manages patches for infrastructure and software."
+					},
+					{
+						"id": "CC8.1.o",
+						"title": "Considers System Resilience",
+						"requirement": "For availability: designs for and tests resilience so operations can recover from significant disruptions."
+					},
+					{
+						"id": "CC8.1.p",
+						"title": "Protects Confidential Information",
+						"requirement": "For confidentiality: protects confidential information throughout system design, testing, and change."
+					},
+					{
+						"id": "CC8.1.q",
+						"title": "Protects Personal Information",
+						"requirement": "For privacy: protects personal information throughout system design, testing, and change."
+					},
+					{
+						"id": "CC8.1.r",
+						"title": "Privacy by Design",
+						"requirement": "For privacy: builds privacy requirements into design and limits personal information to what the purpose needs."
 					}
 				]
 			}
@@ -1442,6 +1512,133 @@
 							"id": "C1.2.b",
 							"title": "Destroys Confidential Information",
 							"requirement": "Erases or destroys information identified for destruction."
+						}
+					]
+				}
+			],
+			"processingIntegrity": [
+				{
+					"id": "PI1.1",
+					"principle": "The entity obtains or generates, uses, and communicates relevant, quality information regarding the objectives related to processing, including definitions of data processed and product and service specifications, to support the use of products and services.",
+					"pof": [
+						{
+							"id": "PI1.1.a",
+							"title": "Identifies Functional and Nonfunctional Requirements and Information Specifications",
+							"requirement": "Identifies and communicates processing requirements and information specifications needed to use products and services."
+						},
+						{
+							"id": "PI1.1.b",
+							"title": "Defines Data Necessary to Support a Product or Service",
+							"requirement": "Makes complete, accurate data definitions available to users, covering population, elements, sources, units, precision, uncertainty, time period, inclusion factors, and needed metadata."
+						},
+						{
+							"id": "PI1.1.c",
+							"title": "Defines Information Necessary to Support the Use of a Good or Product",
+							"requirement": "For goods or products: makes the information needed to use them available, identifiable, and validated for completeness and accuracy."
+						}
+					]
+				},
+				{
+					"id": "PI1.2",
+					"principle": "The entity implements policies and procedures over system inputs, including controls over completeness and accuracy, to result in products, services, and reporting to meet the entity's objectives.",
+					"pof": [
+						{
+							"id": "PI1.2.a",
+							"title": "Defines Characteristics of Processing Inputs",
+							"requirement": "Defines the input characteristics needed to meet requirements."
+						},
+						{
+							"id": "PI1.2.b",
+							"title": "Evaluates Processing Inputs",
+							"requirement": "Checks inputs against defined input requirements."
+						},
+						{
+							"id": "PI1.2.c",
+							"title": "Creates and Maintains Records of System Inputs",
+							"requirement": "Keeps complete, accurate, and timely records of input activities."
+						}
+					]
+				},
+				{
+					"id": "PI1.3",
+					"principle": "The entity implements policies and procedures over system processing to result in products, services, and reporting to meet the entity's objectives.",
+					"pof": [
+						{
+							"id": "PI1.3.a",
+							"title": "Defines Processing Specifications",
+							"requirement": "Defines the processing specifications needed to meet product or service requirements."
+						},
+						{
+							"id": "PI1.3.b",
+							"title": "Defines Processing Activities",
+							"requirement": "Defines processing activities that produce outputs meeting specifications."
+						},
+						{
+							"id": "PI1.3.c",
+							"title": "Detects and Corrects Processing or Production Activity Errors",
+							"requirement": "Detects and corrects processing or production errors promptly."
+						},
+						{
+							"id": "PI1.3.d",
+							"title": "Records System Processing Activities",
+							"requirement": "Records processing activities completely, accurately, and on time."
+						},
+						{
+							"id": "PI1.3.e",
+							"title": "Processes Inputs",
+							"requirement": "Processes inputs completely, accurately, and on time as authorized."
+						}
+					]
+				},
+				{
+					"id": "PI1.4",
+					"principle": "The entity implements policies and procedures to make available or deliver output completely, accurately, and timely in accordance with specifications to meet the entity's objectives.",
+					"pof": [
+						{
+							"id": "PI1.4.a",
+							"title": "Protects Output",
+							"requirement": "Protects stored or delivered output from theft, destruction, corruption, or deterioration."
+						},
+						{
+							"id": "PI1.4.b",
+							"title": "Distributes Output Only to Intended Parties",
+							"requirement": "Limits output distribution to intended parties."
+						},
+						{
+							"id": "PI1.4.c",
+							"title": "Distributes Output Completely and Accurately",
+							"requirement": "Ensures distributed output is complete, accurate, and timely."
+						},
+						{
+							"id": "PI1.4.d",
+							"title": "Creates and Maintains Records of System Output Activities",
+							"requirement": "Keeps complete, accurate, and timely records of output activities."
+						}
+					]
+				},
+				{
+					"id": "PI1.5",
+					"principle": "The entity implements policies and procedures to store inputs, items in processing, and outputs completely, accurately, and timely in accordance with system specifications to meet the entity's objectives.",
+					"pof": [
+						{
+							"id": "PI1.5.a",
+							"title": "Protects Stored Items",
+							"requirement": "Protects stored items from theft, corruption, destruction, or deterioration."
+						},
+						{
+							"id": "PI1.5.b",
+							"title": "Archives and Protects System Records",
+							"requirement": "Archives system records and protects the archives."
+						},
+						{
+							"id": "PI1.5.c",
+							"title": "Stores Data Completely and Accurately",
+							"requirement": "Stores data completely, accurately, and on time."
+						},
+						{
+							"id": "PI1.5.d",
+							"title": "Creates and Maintains Records of System Storage Activities",
+							"requirement": "Keeps complete, accurate, and timely records of storage activities."
 						}
 					]
 				}
