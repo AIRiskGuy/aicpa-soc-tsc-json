@@ -14,6 +14,17 @@ A collection of machine-readable formats for the Trust Services Criteria (TSC) a
 
 > Note: JSON controls data was generated using AI and is not guaranteed to be 100% accurate. The CSV file was generated from the JSON file and is also not guaranteed to be 100% accurate. The original PDF files are the authoritative source for the TSC.
 
+### Coverage and how the CSV is built
+
+The controls JSON covers all 61 criteria (33 common criteria, 3 availability, 2 confidentiality, 5 processing integrity, 18 privacy) and all 330 points of focus in the PDF, and validates against the schema. Criterion statements and point-of-focus titles follow the PDF; `requirement` fields are short summaries, not the full AICPA wording. CC3.1 point-of-focus titles are prefixed with their COSO objective group (for example, "Operations Objectives: ...").
+
+The controls CSV has one row per point of focus and is generated from the JSON, so the two always match:
+
+```bash
+npm run build:csv   # regenerate the CSV from the JSON
+npm run check:csv   # fail if the CSV and JSON differ
+```
+
 ### JSON control sample and schema
 
 Since AICPA does not publish a schema for the JSON control files, we have created our own schema based on the data in the JSON files. A sample of the data is below. The JSON Schema file of the TSC controls is available as well.
